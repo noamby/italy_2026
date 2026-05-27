@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italy Trip Deck - June 2026</title>
+    <!-- Tailwind CSS (Cached by browser for offline use) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased pb-20">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl">🏔️</span>
+                <div>
+                    <h1 class="text-md sm:text-lg font-bold text-slate-900 leading-tight">Italy Family Trip Deck</h1>
+                    <p class="text-[10px] sm:text-xs text-slate-500">May 27 – June 7, 2026</p>
+                </div>
+            </div>
+            <div class="flex space-x-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-green-100 text-green-800">Celiac Safe</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row mt-6 px-4 gap-6">
+
+        <!-- Left Sidebar Navigation (Dates) -->
+        <nav class="w-full md:w-48 flex-shrink-0 z-30">
+            <div class="md:sticky md:top-24 flex md:flex-col overflow-x-auto hide-scroll gap-2 bg-white md:bg-transparent p-2 md:p-0 rounded-lg shadow-sm md:shadow-none border border-slate-200 md:border-none">
+                <p class="hidden md:block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 px-3">Itinerary</p>
+                <button id="nav-d1" onclick="showDay('d1')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">May 27 - Day 1</button>
+                <button id="nav-d2" onclick="showDay('d2')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">May 28 - Day 2</button>
+                <button id="nav-d3" onclick="showDay('d3')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">May 29 - Day 3</button>
+                <button id="nav-d4" onclick="showDay('d4')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">May 30 - Day 4</button>
+                <button id="nav-d5" onclick="showDay('d5')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">May 31 - Day 5</button>
+                <button id="nav-d6" onclick="showDay('d6')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">Jun 01 - Day 6</button>
+                <button id="nav-d7" onclick="showDay('d7')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">Jun 02 - Day 7</button>
+                <button id="nav-d8" onclick="showDay('d8')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">Jun 03 - Day 8</button>
+                <button id="nav-d9" onclick="showDay('d9')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">Jun 04 - Day 9</button>
+                <button id="nav-d10" onclick="showDay('d10')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">Jun 05 - Day 10</button>
+                <button id="nav-d11" onclick="showDay('d11')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">Jun 06 - Day 11</button>
+                <button id="nav-d12" onclick="showDay('d12')" class="nav-link w-full text-left whitespace-nowrap px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:bg-slate-200 transition-colors">Jun 07 - Day 12</button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 min-w-0">
+            
+            <!-- Multi-Graph Dashboard Card -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                <div class="p-5 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <h2 class="text-lg font-bold text-slate-800">Trip Metrics Dashboard</h2>
+                    <div class="flex space-x-3 text-[10px] font-bold uppercase tracking-wider">
+                        <span class="text-emerald-600 flex items-center"><span class="w-2 h-2 rounded-full bg-emerald-500 mr-1"></span>Opt A</span>
+                        <span class="text-indigo-600 flex items-center"><span class="w-2 h-2 rounded-full bg-indigo-500 mr-1"></span>Opt B</span>
+                        <span class="text-rose-600 flex items-center"><span class="w-2 h-2 rounded-full bg-rose-500 mr-1"></span>Opt C</span>
+                    </div>
+                </div>
+
+                <!-- Graph Tabs -->
+                <div class="flex border-b border-slate-100 bg-slate-50">
+                    <button id="tab-temp" onclick="switchGraph('temp')" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-white text-emerald-700 transition-colors">🌡️ Temperature</button>
+                    <button id="tab-drive" onclick="switchGraph('drive')" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-100 transition-colors">🚗 Drive Time</button>
+                    <button id="tab-walk" onclick="switchGraph('walk')" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-100 transition-colors">🥾 Walking</button>
+                </div>
+
+                <!-- 1. TEMPERATURE GRAPH -->
+                <div id="graph-temp-container" class="p-4 overflow-x-auto hide-scroll block">
+                    <svg viewBox="0 0 850 300" class="w-[850px] h-[300px]" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="50" y1="30" x2="820" y2="30" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="15" y="34" font-size="11" fill="#94a3b8" font-weight="700">30°C</text>
+                        <line x1="50" y1="80" x2="820" y2="80" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="15" y="84" font-size="11" fill="#94a3b8" font-weight="700">25°C</text>
+                        <line x1="50" y1="130" x2="820" y2="130" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="15" y="134" font-size="11" fill="#94a3b8" font-weight="700">20°C</text>
+                        <line x1="50" y1="180" x2="820" y2="180" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="15" y="184" font-size="11" fill="#94a3b8" font-weight="700">15°C</text>
+                        <line x1="50" y1="230" x2="820" y2="230" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="15" y="234" font-size="11" fill="#94a3b8" font-weight="700">10°C</text>
+                        <line x1="50" y1="260" x2="820" y2="260" stroke="#cbd5e1" stroke-width="1.5" />
+
+                        <!-- X Labels -->
+                        <g font-size="11" fill="#64748b" font-weight="700" text-anchor="middle">
+                            <text x="50" y="280">5/27</text><text x="120" y="280">5/28</text><text x="190" y="280">5/29</text>
+                            <text x="260" y="280">5/30</text><text x="330" y="280">5/31</text><text x="400" y="280">6/01</text>
+                            <text x="470" y="280">6/02</text><text x="540" y="280">6/03</text><text x="610" y="280">6/04</text>
+                            <text x="680" y="280">6/05</text><text x="750" y="280">6/06</text><text x="820" y="280">6/07</text>
+                        </g>
+
+                        <!-- Paths -->
+                        <path d="M 50,130 L 120,200 L 190,220 L 260,180 L 330,260 L 400,230 L 470,150 L 540,120 L 610,100 L 680,90 L 750,180 L 820,110" fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M 50,130 L 120,120 L 190,150 L 260,180 L 330,110 L 400,130 L 470,150 L 540,120 L 610,100 L 680,90 L 750,80 L 820,110" fill="none" stroke="#6366f1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <!-- Dots A -->
+                        <g stroke="#ffffff" stroke-width="2.5" fill="#10b981">
+                            <circle cx="50" cy="130" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d1', 'A')"/>
+                            <circle cx="120" cy="200" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d2', 'A')"/>
+                            <circle cx="190" cy="220" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d3', 'A')"/>
+                            <circle cx="260" cy="180" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d4', 'A')"/>
+                            <circle cx="330" cy="260" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d5', 'A')"/>
+                            <circle cx="400" cy="230" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d6', 'A')"/>
+                            <circle cx="470" cy="150" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d7', 'A')"/>
+                            <circle cx="540" cy="120" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d8', 'A')"/>
+                            <circle cx="610" cy="100" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d9', 'A')"/>
+                            <circle cx="680" cy="90" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d10', 'A')"/>
+                            <circle cx="750" cy="180" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d11', 'A')"/>
+                            <circle cx="820" cy="110" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d12', 'A')"/>
+                        </g>
+                        <!-- Dots B -->
+                        <g stroke="#ffffff" stroke-width="2.5" fill="#6366f1">
+                            <circle cx="50" cy="130" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d1', 'B')"/>
+                            <circle cx="120" cy="120" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d2', 'B')"/>
+                            <circle cx="190" cy="150" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d3', 'B')"/>
+                            <circle cx="260" cy="180" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d4', 'B')"/>
+                            <circle cx="330" cy="110" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d5', 'B')"/>
+                            <circle cx="400" cy="130" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d6', 'B')"/>
+                            <circle cx="470" cy="150" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d7', 'B')"/>
+                            <circle cx="540" cy="120" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d8', 'B')"/>
+                            <circle cx="610" cy="100" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d9', 'B')"/>
+                            <circle cx="680" cy="90" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d10', 'B')"/>
+                            <circle cx="750" cy="80" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d11', 'B')"/>
+                            <circle cx="820" cy="110" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d12', 'B')"/>
+                        </g>
+                        <!-- Dots C (Rose) -->
+                        <g stroke="#ffffff" stroke-width="2.5" fill="#f43f5e">
+                            <circle cx="190" cy="150" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d3', 'C')"/>
+                            <circle cx="330" cy="280" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d5', 'C')"/>
+                            <circle cx="470" cy="150" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d7', 'C')"/>
+                        </g>
+                        <!-- Labels -->
+                        <g font-size="10" font-weight="700" text-anchor="middle" class="pointer-events-none">
+                            <text x="50" y="148" fill="#047857">20°</text><text x="120" y="218" fill="#047857">13°</text>
+                            <text x="190" y="238" fill="#047857">11°</text><text x="260" y="198" fill="#047857">15°</text>
+                            <text x="330" y="278" fill="#047857">7°</text><text x="400" y="248" fill="#047857">10°</text>
+                            <text x="470" y="168" fill="#047857">18°</text><text x="540" y="138" fill="#047857">21°</text>
+                            <text x="610" y="88" fill="#047857">23°</text><text x="680" y="78" fill="#047857">24°</text>
+                            <text x="750" y="198" fill="#047857">15°</text><text x="820" y="98" fill="#047857">22°</text>
+
+                            <text x="120" y="108" fill="#4338ca">21°</text>
+                            <text x="190" y="138" fill="#4338ca">18°</text>
+                            <text x="330" y="98" fill="#4338ca">22°</text><text x="400" y="118" fill="#4338ca">20°</text>
+                            <text x="750" y="68" fill="#4338ca">25°</text>
+
+                            <!-- Option C Labels -->
+                            <text x="190" y="168" fill="#e11d48">18°</text>
+                            <text x="330" y="295" fill="#e11d48">5°</text>
+                            <text x="470" y="138" fill="#e11d48">18°</text>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- 2. DRIVE TIME GRAPH -->
+                <div id="graph-drive-container" class="p-4 overflow-x-auto hide-scroll hidden">
+                    <svg viewBox="0 0 850 300" class="w-[850px] h-[300px]" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="50" y1="30" x2="820" y2="30" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="10" y="34" font-size="11" fill="#94a3b8" font-weight="700">2h30</text>
+                        <line x1="50" y1="76" x2="820" y2="76" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="10" y="80" font-size="11" fill="#94a3b8" font-weight="700">2h</text>
+                        <line x1="50" y1="122" x2="820" y2="122" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="10" y="126" font-size="11" fill="#94a3b8" font-weight="700">1h30</text>
+                        <line x1="50" y1="168" x2="820" y2="168" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="10" y="172" font-size="11" fill="#94a3b8" font-weight="700">1h</text>
+                        <line x1="50" y1="214" x2="820" y2="214" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="10" y="218" font-size="11" fill="#94a3b8" font-weight="700">30m</text>
+                        <line x1="50" y1="260" x2="820" y2="260" stroke="#cbd5e1" stroke-width="1.5" />
+                        <text x="10" y="264" font-size="11" fill="#94a3b8" font-weight="700">0m</text>
+
+                        <g font-size="11" fill="#64748b" font-weight="700" text-anchor="middle">
+                            <text x="50" y="280">5/27</text><text x="120" y="280">5/28</text><text x="190" y="280">5/29</text>
+                            <text x="260" y="280">5/30</text><text x="330" y="280">5/31</text><text x="400" y="280">6/01</text>
+                            <text x="470" y="280">6/02</text><text x="540" y="280">6/03</text><text x="610" y="280">6/04</text>
+                            <text x="680" y="280">6/05</text><text x="750" y="280">6/06</text><text x="820" y="280">6/07</text>
+                        </g>
+
+                        <path d="M 50,245 L 120,99 L 190,168 L 260,214 L 330,168 L 400,168 L 470,214 L 540,168 L 610,76 L 680,260 L 750,245 L 820,176" fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M 50,245 L 120,122 L 190,153 L 260,183 L 330,137 L 400,183 L 470,153 L 540,183 L 610,76 L 680,245 L 750,168 L 820,191" fill="none" stroke="#6366f1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g stroke="#ffffff" stroke-width="2.5" fill="#10b981">
+                            <circle cx="50" cy="245" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d1', 'A')"/>
+                            <circle cx="120" cy="99" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d2', 'A')"/>
+                            <circle cx="190" cy="168" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d3', 'A')"/>
+                            <circle cx="260" cy="214" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d4', 'A')"/>
+                            <circle cx="330" cy="168" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d5', 'A')"/>
+                            <circle cx="400" cy="168" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d6', 'A')"/>
+                            <circle cx="470" cy="214" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d7', 'A')"/>
+                            <circle cx="540" cy="168" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d8', 'A')"/>
+                            <circle cx="610" cy="76" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d9', 'A')"/>
+                            <circle cx="680" cy="260" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d10', 'A')"/>
+                            <circle cx="750" cy="245" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d11', 'A')"/>
+                            <circle cx="820" cy="176" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d12', 'A')"/>
+                        </g>
+                        <g stroke="#ffffff" stroke-width="2.5" fill="#6366f1">
+                            <circle cx="50" cy="245" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d1', 'B')"/>
+                            <circle cx="120" cy="122" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d2', 'B')"/>
+                            <circle cx="190" cy="153" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d3', 'B')"/>
+                            <circle cx="260" cy="183" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d4', 'B')"/>
+                            <circle cx="330" cy="137" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d5', 'B')"/>
+                            <circle cx="400" cy="183" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d6', 'B')"/>
+                            <circle cx="470" cy="153" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d7', 'B')"/>
+                            <circle cx="540" cy="183" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d8', 'B')"/>
+                            <circle cx="610" cy="76" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d9', 'B')"/>
+                            <circle cx="680" cy="245" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d10', 'B')"/>
+                            <circle cx="750" cy="168" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d11', 'B')"/>
+                            <circle cx="820" cy="191" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d12', 'B')"/>
+                        </g>
+                        <!-- Dots C (Rose) -->
+                        <g stroke="#ffffff" stroke-width="2.5" fill="#f43f5e">
+                            <!-- Day 3: 40m = cy 199 -->
+                            <circle cx="190" cy="199" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d3', 'C')"/>
+                            <!-- Day 5: 1h 10m (70m) = cy 153 -->
+                            <circle cx="330" cy="153" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d5', 'C')"/>
+                            <!-- Day 7: 1h 20m (80m) = cy 137 -->
+                            <circle cx="470" cy="137" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d7', 'C')"/>
+                        </g>
+                        <g font-size="10" font-weight="700" text-anchor="middle" class="pointer-events-none">
+                            <text x="50" y="235" fill="#047857">10m</text><text x="120" y="89" fill="#047857">1h45m</text>
+                            <text x="190" y="183" fill="#047857">1h</text><text x="260" y="229" fill="#047857">30m</text>
+                            <text x="330" y="183" fill="#047857">1h</text><text x="400" y="158" fill="#047857">1h</text>
+                            <text x="470" y="229" fill="#047857">30m</text><text x="540" y="158" fill="#047857">1h</text>
+                            <text x="610" y="66" fill="#047857">2h</text><text x="680" y="272" fill="#047857">0m</text>
+                            <text x="750" y="257" fill="#047857">10m</text><text x="820" y="166" fill="#047857">55m</text>
+
+                            <text x="120" y="137" fill="#4338ca">1h30m</text><text x="190" y="143" fill="#4338ca">1h10m</text>
+                            <text x="260" y="173" fill="#4338ca">50m</text><text x="330" y="127" fill="#4338ca">1h20m</text>
+                            <text x="400" y="198" fill="#4338ca">50m</text><text x="470" y="143" fill="#4338ca">1h10m</text>
+                            <text x="540" y="198" fill="#4338ca">50m</text>
+                            <text x="680" y="235" fill="#4338ca">10m</text><text x="750" y="158" fill="#4338ca">1h</text>
+                            <text x="820" y="206" fill="#4338ca">45m</text>
+
+                            <!-- Option C Labels -->
+                            <text x="190" y="213" fill="#e11d48">40m</text>
+                            <text x="330" y="168" fill="#e11d48">1h10m</text>
+                            <text x="470" y="127" fill="#e11d48">1h20m</text>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- 3. WALKING GRAPH -->
+                <div id="graph-walk-container" class="p-4 overflow-x-auto hide-scroll hidden">
+                    <svg viewBox="0 0 850 300" class="w-[850px] h-[300px]" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="50" y1="30" x2="820" y2="30" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="15" y="34" font-size="11" fill="#94a3b8" font-weight="700">4km</text>
+                        <line x1="50" y1="87.5" x2="820" y2="87.5" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="15" y="91" font-size="11" fill="#94a3b8" font-weight="700">3km</text>
+                        <line x1="50" y1="145" x2="820" y2="145" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="15" y="149" font-size="11" fill="#94a3b8" font-weight="700">2km</text>
+                        <line x1="50" y1="202.5" x2="820" y2="202.5" stroke="#f1f5f9" stroke-width="2" />
+                        <text x="15" y="206" font-size="11" fill="#94a3b8" font-weight="700">1km</text>
+                        <line x1="50" y1="260" x2="820" y2="260" stroke="#cbd5e1" stroke-width="1.5" />
+                        <text x="15" y="264" font-size="11" fill="#94a3b8" font-weight="700">0km</text>
+
+                        <g font-size="11" fill="#64748b" font-weight="700" text-anchor="middle">
+                            <text x="50" y="280">5/27</text><text x="120" y="280">5/28</text><text x="190" y="280">5/29</text>
+                            <text x="260" y="280">5/30</text><text x="330" y="280">5/31</text><text x="400" y="280">6/01</text>
+                            <text x="470" y="280">6/02</text><text x="540" y="280">6/03</text><text x="610" y="280">6/04</text>
+                            <text x="680" y="280">6/05</text><text x="750" y="280">6/06</text><text x="820" y="280">6/07</text>
+                        </g>
+
+                        <path d="M 50,231 L 120,145 L 190,174 L 260,202.5 L 330,202.5 L 400,87.5 L 470,116 L 540,87.5 L 610,174 L 680,145 L 750,174 L 820,116" fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M 50,231 L 120,116 L 190,202.5 L 260,174 L 330,145 L 400,145 L 470,202.5 L 540,174 L 610,145 L 680,116 L 750,145 L 820,145" fill="none" stroke="#6366f1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g stroke="#ffffff" stroke-width="2.5" fill="#10b981">
+                            <circle cx="50" cy="231" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d1', 'A')"/>
+                            <circle cx="120" cy="145" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d2', 'A')"/>
+                            <circle cx="190" cy="174" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d3', 'A')"/>
+                            <circle cx="260" cy="202.5" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d4', 'A')"/>
+                            <circle cx="330" cy="202.5" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d5', 'A')"/>
+                            <circle cx="400" cy="87.5" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d6', 'A')"/>
+                            <circle cx="470" cy="116" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d7', 'A')"/>
+                            <circle cx="540" cy="87.5" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d8', 'A')"/>
+                            <circle cx="610" cy="174" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d9', 'A')"/>
+                            <circle cx="680" cy="145" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d10', 'A')"/>
+                            <circle cx="750" cy="174" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d11', 'A')"/>
+                            <circle cx="820" cy="116" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d12', 'A')"/>
+                        </g>
+                        <g stroke="#ffffff" stroke-width="2.5" fill="#6366f1">
+                            <circle cx="50" cy="231" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d1', 'B')"/>
+                            <circle cx="120" cy="116" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d2', 'B')"/>
+                            <circle cx="190" cy="202.5" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d3', 'B')"/>
+                            <circle cx="260" cy="174" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d4', 'B')"/>
+                            <circle cx="330" cy="145" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d5', 'B')"/>
+                            <circle cx="400" cy="145" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d6', 'B')"/>
+                            <circle cx="470" cy="202.5" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d7', 'B')"/>
+                            <circle cx="540" cy="174" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d8', 'B')"/>
+                            <circle cx="610" cy="145" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d9', 'B')"/>
+                            <circle cx="680" cy="116" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d10', 'B')"/>
+                            <circle cx="750" cy="145" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d11', 'B')"/>
+                            <circle cx="820" cy="145" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d12', 'B')"/>
+                        </g>
+                        <!-- Dots C (Rose) -->
+                        <g stroke="#ffffff" stroke-width="2.5" fill="#f43f5e">
+                            <!-- Day 3: 2km = cy 145 -->
+                            <circle cx="190" cy="145" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d3', 'C')"/>
+                            <!-- Day 5: 1km = cy 202.5 -->
+                            <circle cx="330" cy="202.5" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d5', 'C')"/>
+                            <!-- Day 7: 1.5km = cy 174 -->
+                            <circle cx="470" cy="174" r="6" class="cursor-pointer hover:r-9 transition-all" onclick="showDay('d7', 'C')"/>
+                        </g>
+                        <g font-size="10" font-weight="700" text-anchor="middle" class="pointer-events-none">
+                            <text x="50" y="221" fill="#047857">0.5km</text><text x="120" y="158" fill="#047857">2km</text>
+                            <text x="190" y="164" fill="#047857">1.5km</text><text x="260" y="217" fill="#047857">1km</text>
+                            <text x="330" y="217" fill="#047857">1km</text><text x="400" y="77.5" fill="#047857">3km</text>
+                            <text x="470" y="106" fill="#047857">2.5km</text><text x="540" y="77.5" fill="#047857">3km</text>
+                            <text x="610" y="189" fill="#047857">1.5km</text><text x="680" y="160" fill="#047857">2km</text>
+                            <text x="750" y="189" fill="#047857">1.5km</text><text x="820" y="106" fill="#047857">2.5km</text>
+
+                            <text x="120" y="106" fill="#4338ca">2.5km</text><text x="190" y="217" fill="#4338ca">1km</text>
+                            <text x="260" y="164" fill="#4338ca">1.5km</text><text x="330" y="135" fill="#4338ca">2km</text>
+                            <text x="400" y="160" fill="#4338ca">2km</text><text x="470" y="217" fill="#4338ca">1km</text>
+                            <text x="540" y="189" fill="#4338ca">1.5km</text><text x="610" y="135" fill="#4338ca">2km</text>
+                            <text x="680" y="106" fill="#4338ca">2.5km</text><text x="750" y="135" fill="#4338ca">2km</text>
+                            <text x="820" y="160" fill="#4338ca">2km</text>
+
+                            <!-- Option C Labels -->
+                            <text x="190" y="135" fill="#e11d48">2km</text>
+                            <text x="330" y="192" fill="#e11d48">1km</text>
+                            <text x="470" y="164" fill="#e11d48">1.5km</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Single Day Card Container -->
+            <div id="day-container">
+
+                <!-- DAY 1 (May 27 Arrival) -->
+                <div id="d1" class="day-card bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">MAY 27 • MILAN AIRPORT</span>
+                        <h3 class="text-xl font-bold">Day 1: Landing & Rest</h3>
+                    </div>
+                    
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Milan Airport Hotel
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Via+Bellaria+39+21019+Case+Nuove+Italy" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Via Bellaria, 39 (Case Nuove)</a>
+                    </div>
+
+                    <!-- Car Rental Pick-up Banner -->
+                    <div class="bg-blue-50 border-b border-blue-100 px-5 py-3 flex flex-col text-sm gap-2">
+                        <div class="flex justify-between items-center cursor-pointer select-none" onclick="document.getElementById('car-pickup-info').classList.toggle('hidden')">
+                            <div class="flex items-center gap-2 text-blue-900">
+                                <span>🚙</span> <strong>Pick-up:</strong> Maggiore (Conf: 21652393IL0)
+                            </div>
+                            <button class="text-blue-600 font-bold hover:bg-blue-200 text-xs flex items-center gap-1 bg-blue-100 px-2 py-1 rounded transition-colors">
+                                Instructions <span>▼</span>
+                            </button>
+                        </div>
+                        <div id="car-pickup-info" class="hidden mt-2 p-4 bg-white rounded-lg border border-blue-100 text-xs text-slate-700 shadow-sm space-y-2">
+                            <p><strong class="text-slate-900">Booking Number:</strong> 630968973</p>
+                            <p><strong class="text-slate-900">Supplier:</strong> Maggiore</p>
+                            <p><strong class="text-slate-900">Address:</strong> Malpensa Aeroporto Terminal 2, Milan, 21010</p>
+                            <p><strong class="text-slate-900">Telephone:</strong> <a href="tel:+390258583803" class="text-blue-600 font-bold hover:underline">+39 02 58583803</a></p>
+                            <div class="mt-3">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Maggiore+Malpensa+Aeroporto+Terminal+2" target="_blank" class="inline-block px-3 py-1.5 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 font-bold transition-colors">📍 Open in Maps</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="content-A-d1" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 20°C (Airport)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 10m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 0.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Comfortable travel clothes. Have a warm sweater ready for the kids when leaving the airport.</p>
+                        
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Evening:</strong> Land at Malpensa Airport at 22:00. Clear customs and collect the rental car. Drive 10 minutes to your nearby airport hotel and put the kids straight to bed.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch/Dinner:</strong> Grab a late snack at the airport or rely on travel snacks packed from home due to the late 22:00 arrival.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 2 -->
+                <div id="d2" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">MAY 28 • INTROD</span>
+                        <h3 class="text-xl font-bold">Day 2: Supermarkets & Settling In</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Introd Airbnb (Aosta Valley)
+                        </div>
+                        <a href="https://goo.gl/maps/pJCPPvgLjkJM5BQ18" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <!-- GROCERY STOCK UP D2 -->
+                    <div class="p-5 pb-0">
+                        <div class="bg-white border border-slate-200 shadow-sm rounded-xl p-4">
+                            <h4 class="text-sm font-bold text-slate-900 flex items-center gap-2 mb-2"><span>🛒</span> Stocking Up (Milan to Aosta)</h4>
+                            <ul class="text-xs text-slate-700 space-y-2">
+                                <li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Esselunga+di+Gallarate" target="_blank" class="font-bold underline hover:text-emerald-600">Esselunga di Gallarate</a>: 15 mins from Malpensa. Massive hypermarket perfect for GF basics, diapers, and week-long supplies. <strong>Best if you choose Option A</strong>.</li>
+                                <li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Gros+Cidac+Aosta" target="_blank" class="font-bold underline hover:text-indigo-600">Gros Cidac (Aosta)</a>: Located right in Aosta town. Incredible local meats, Fontina cheese, and local goods. <strong>Best if you choose Option B</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="flex border-b border-slate-200 mt-4">
+                        <button onclick="switchTab('d2', 'A')" id="btn-A-d2" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Option A (Nature)</button>
+                        <button onclick="switchTab('d2', 'B')" id="btn-B-d2" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">🌧️ Option B (Town)</button>
+                    </div>
+                    <!-- Content A -->
+                    <div id="content-A-d2" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 13°C (Hills)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h 45m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> T-shirt + leggings. Pack a cozy sweater for the baby & adults for wooded afternoon shade.</p>
+
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier or stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Fleeces/Sweaters</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Snacks for the drive</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Tablet for the drive</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Slow start. Drive to <a href="https://www.google.com/maps/search/?api=1&query=Esselunga+di+Gallarate" target="_blank" class="text-emerald-600 font-semibold hover:underline">Esselunga di Gallarate</a> for groceries. 1.5-hour drive into Aosta Valley.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Check into Introd. Visit <a href="https://www.google.com/maps/search/?api=1&query=Parc+Animalier+d'Introd" target="_blank" class="text-emerald-600 font-semibold hover:underline">Parc Animalier d'Introd</a> to see ibex, chamois, marmots, owls, and deer on wide stroller-friendly trails.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Lo+Tatà+Introd" target="_blank" class="text-emerald-700 font-bold hover:underline">Lo Tatà (Introd)</a><br>
+                            <span class="text-slate-600">Very close to the park. Authentic local food with a friendly atmosphere; they are familiar with dietary restrictions.</span>
+                        </div>
+                    </div>
+                    <!-- Content B -->
+                    <div id="content-B-d2" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 21°C (Valley)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h 30m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Light layers suitable for city walking.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Tablet for the drive</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive to Aosta town. Stock up at <a href="https://www.google.com/maps/search/?api=1&query=Gros+Cidac+Aosta" target="_blank" class="text-indigo-600 font-semibold hover:underline">Gros Cidac</a>.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Walk <a href="https://www.google.com/maps/search/?api=1&query=Aosta+Town+Center" target="_blank" class="text-indigo-600 font-semibold hover:underline">Aosta Town Center</a> and visit the <a href="https://www.google.com/maps/search/?api=1&query=Teatro+Romano+Aosta" target="_blank" class="text-indigo-600 font-semibold hover:underline">Roman Theater</a>. Enjoy a long gelato break in the pedestrian zone.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Trattoria+degli+Artisti+Aosta" target="_blank" class="text-indigo-700 font-bold hover:underline">Trattoria degli Artisti (Aosta)</a><br>
+                            <span class="text-slate-600">Located in the center with a good understanding of gluten-free needs. Great for a sit-down meal amidst the ruins.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 3 -->
+                <div id="d3" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">MAY 29 • COGNE / BARD</span>
+                        <h3 class="text-xl font-bold">Day 3: Nature's Roar</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Introd Airbnb (Aosta Valley)
+                        </div>
+                        <a href="https://goo.gl/maps/pJCPPvgLjkJM5BQ18" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <div class="flex border-b border-slate-200">
+                        <button onclick="switchTab('d3', 'A')" id="btn-A-d3" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Option A (Falls)</button>
+                        <button onclick="switchTab('d3', 'B')" id="btn-B-d3" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">🌧️ Option B (Fort)</button>
+                        <button onclick="switchTab('d3', 'C')" id="btn-C-d3" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">🦙 Option C (Alpacas)</button>
+                    </div>
+                    <div id="content-A-d3" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 11°C (Falls)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Base layer t-shirt with fleece & windbreaker. High-traction sneakers. Carrier wind-shield.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Rain Jackets</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Snacks for the drive</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive to Cogne. Hike <a href="https://www.google.com/maps/search/?api=1&query=Cascate+di+Lillaz" target="_blank" class="text-emerald-600 font-semibold hover:underline">Lillaz Waterfalls</a>. An easy 1.5km loop, the falls are thunderous in May due to snowmelt.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Relax at <a href="https://www.google.com/maps/search/?api=1&query=Prati+di+Sant'Orso+Cogne" target="_blank" class="text-emerald-600 font-semibold hover:underline">Sant'Orso Meadows</a> in Cogne. Let the kids use the large playground while you enjoy the glacier views.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Lou+Ressignon+Cogne" target="_blank" class="text-emerald-700 font-bold hover:underline">Ristorante Lou Ressignon (Cogne)</a><br>
+                            <span class="text-slate-600">Excellent and highly rated for gluten-free traditional dishes (or opt for a meadow picnic).</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d3" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 18°C (Fort)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h 10m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Comfortable indoor walking clothes.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Jackets</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive down the valley to <a href="https://www.google.com/maps/search/?api=1&query=Forte+di+Bard" target="_blank" class="text-indigo-600 font-semibold hover:underline">Forte di Bard</a>. Ride the futuristic glass elevators to the top level.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Explore the <a href="https://www.google.com/maps/search/?api=1&query=Museum+of+the+Alps+Forte+di+Bard" target="_blank" class="text-indigo-600 font-semibold hover:underline">Museum of the Alps</a> inside the fort (interactive for kids). Stop in the tiny medieval village of Bard for a snack.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=La+Polveriera+Forte+di+Bard" target="_blank" class="text-indigo-700 font-bold hover:underline">La Polveriera (Inside the Fort)</a><br>
+                            <span class="text-slate-600">Convenient for families mid-tour. Offers safe allergen handling.</span>
+                        </div>
+                    </div>
+                    <div id="content-C-d3" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 18°C (Valley)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 40m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Comfortable outdoor wear for walking with animals, light jacket for the mountain gondola.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Shoes</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Jackets</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive to <a href="https://www.google.com/maps/search/?api=1&query=Alpaca+Sape" target="_blank" class="text-rose-600 font-semibold hover:underline">Alpaca Sapé</a> (Doues). Enjoy a guided 1.5-hour nature walk where the kids get to lead their own alpacas! (Must book via WhatsApp/Instagram in advance).</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Drive down to the <a href="https://www.google.com/maps/search/?api=1&query=Aosta-Pila+gondola" target="_blank" class="text-rose-600 font-semibold hover:underline">Aosta-Pila Gondola</a> parking. Ride the cable car 20 mins up to Pila for ice cream and panoramic valley views.</p>
+                        </div>
+
+                        <div class="bg-rose-50/50 p-4 rounded-lg border border-rose-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> Enjoy a meal at one of the mountain-view cafes in Pila, or grab GF snacks before taking the gondola back down.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 4 -->
+                <div id="d4" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">MAY 30 • FÉNIS / SARRE</span>
+                        <h3 class="text-xl font-bold">Day 4: Castles & Gardens</h3>
+                    </div>
+                    
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Introd Airbnb (Aosta Valley)
+                        </div>
+                        <a href="https://goo.gl/maps/pJCPPvgLjkJM5BQ18" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <div class="flex border-b border-slate-200">
+                        <button onclick="switchTab('d4', 'A')" id="btn-A-d4" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">☀️ Option A (Gardens)</button>
+                        <button onclick="switchTab('d4', 'B')" id="btn-B-d4" class="flex-1 py-3 text-sm font-bold border-b-2 border-indigo-500 bg-indigo-50 text-indigo-700 transition-colors">🌧️ Option B (Castle)</button>
+                    </div>
+                    <div id="content-A-d4" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 15°C (Valley)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 30m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Fleeces or light down jackets. Wrap baby in full fleece suit.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier or stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Picnic Lunch</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Explore <a href="https://www.google.com/maps/search/?api=1&query=Castello+Reale+di+Sarre" target="_blank" class="text-emerald-600 font-semibold hover:underline">Sarre Royal Castle</a> and see the famous "Horn Gallery".</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Spread a blanket in the Castle Gardens. It's a very flat, safe grassy area for the baby to crawl while you relax.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> Picnic in the Gardens<br>
+                            <span class="text-slate-600">This is a low-key day. Best to have a light lunch back at your Airbnb or a simple picnic in the gardens.</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d4" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 15°C (Valley - Rain)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 50m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Keep umbrellas in the car. Sturdy, warm shoes.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Umbrellas</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Warm baby fleece</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Visit <a href="https://www.google.com/maps/search/?api=1&query=Castello+di+Fénis" target="_blank" class="text-indigo-600 font-semibold hover:underline">Fénis Castle</a>. Take the guided tour to see the colorful frescoes and the double defensive walls.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Drive to nearby Nus for a slow lunch, then head back to Introd for a relaxed afternoon indoors or by the local stream.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Comtes+de+Challant+Fenis" target="_blank" class="text-indigo-700 font-bold hover:underline">Ristorante Comtes de Challant (Fénis)</a><br>
+                            <span class="text-slate-600">Just a short walk from the castle, very accommodating for children and offers GF pasta/risotto.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 5 -->
+                <div id="d5" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">MAY 31 • COURMAYEUR</span>
+                        <h3 class="text-xl font-bold">Day 5: High Peaks</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Introd Airbnb (Aosta Valley)
+                        </div>
+                        <a href="https://goo.gl/maps/pJCPPvgLjkJM5BQ18" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <div class="flex border-b border-slate-200">
+                        <button onclick="switchTab('d5', 'A')" id="btn-A-d5" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Opt A (Skyway)</button>
+                        <button onclick="switchTab('d5', 'B')" id="btn-B-d5" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">☀️ Opt B (Val Ferret)</button>
+                        <button onclick="switchTab('d5', 'C')" id="btn-C-d5" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">❄️ Opt C (Cervinia)</button>
+                    </div>
+                    <div id="content-A-d5" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 7°C (Skyway)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Warm winter gear! Puffer jackets, hats, gloves, sunblock, and sunglasses are mandatory.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Warm baby fleece</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Gloves</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Beanies</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Take the <a href="https://www.google.com/maps/search/?api=1&query=Skyway+Monte+Bianco+Pavillon" target="_blank" class="text-emerald-600 font-semibold hover:underline">Skyway Monte Bianco</a> to the Pavillon station (2,173m). Visit the "Skyway For Kids" playground.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Explore the <a href="https://www.google.com/maps/search/?api=1&query=Giardino+Botanico+Alpino+Saussurea" target="_blank" class="text-emerald-600 font-semibold hover:underline">Saussurea Alpine Botanical Garden</a> before taking the cable car back down.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Bellevue+Pavillon+Skyway" target="_blank" class="text-emerald-700 font-bold hover:underline">Restaurant Bellevue (Pavillon Station)</a><br>
+                            <span class="text-slate-600">Buffet-style but high quality; they clearly label allergens. Eating at 2,000m with a view of the peaks is memorable.</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d5" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 22°C (Valley)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h 20m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Valley drive is warm—t-shirts suffice.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Shoes</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Snacks for the drive</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Take the scenic drive through <a href="https://www.google.com/maps/search/?api=1&query=Val+Ferret+Courmayeur" target="_blank" class="text-indigo-600 font-semibold hover:underline">Val Ferret</a>. Park at the end of the public road.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Take a very easy stroll along the flat valley floor river. Find a safe "beach" of pebbles for the kids to play in the water.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Pizzeria+L'Etoile+Val+Ferret" target="_blank" class="text-indigo-700 font-bold hover:underline">Ristorante Pizzeria L'Etoile (Val Ferret)</a><br>
+                            <span class="text-slate-600">Very rustic and welcoming. Hearty mountain stews and polenta that are naturally GF.</span>
+                        </div>
+                    </div>
+                    <div id="content-C-d5" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 5°C (Summit)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h 10m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Full winter gear for the snowy peak! Puffer jackets, gloves, hats, and high-SPF sunscreen.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Warm baby fleece</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Gloves</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Beanies</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive to Breuil-Cervinia. Park and take the <a href="https://www.google.com/maps/search/?api=1&query=Breuil-Cervinia+Plan+Maison+Cable+Car" target="_blank" class="text-rose-600 font-semibold hover:underline">Matterhorn Cable Cars</a> up to 3,480m to play in real summer snow. A thrilling high-altitude experience.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Drive down 5 minutes to <a href="https://www.google.com/maps/search/?api=1&query=Lac+Bleu+Cervinia" target="_blank" class="text-rose-600 font-semibold hover:underline">Lac Bleu</a>. A tiny, stunning blue lake perfect for a scenic picnic and feeding ducks.</p>
+                        </div>
+
+                        <div class="bg-rose-50/50 p-4 rounded-lg border border-rose-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> Eat at the peak or bring your own picnic to enjoy at Lac Bleu (as the lake isn't overly touristy).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 6 -->
+                <div id="d6" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">JUNE 01 • LAGO D'ARPY</span>
+                        <h3 class="text-xl font-bold">Day 6: High Alpine Lakes</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Introd Airbnb (Aosta Valley)
+                        </div>
+                        <a href="https://goo.gl/maps/pJCPPvgLjkJM5BQ18" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <div class="flex border-b border-slate-200">
+                        <button onclick="switchTab('d6', 'A')" id="btn-A-d6" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Option A (Lake)</button>
+                        <button onclick="switchTab('d6', 'B')" id="btn-B-d6" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">🌧️ Option B (Village)</button>
+                    </div>
+                    <div id="content-A-d6" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 10°C (Lake)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 3km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Active hiking pants, sneakers, layered fleece & windbreaker. Sun hats and sunscreen are essential.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Shoes</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Picnic Lunch</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive to Colle San Carlo. Hike 45 mins to <a href="https://www.google.com/maps/search/?api=1&query=Lago+d'Arpy" target="_blank" class="text-emerald-600 font-semibold hover:underline">Lake Arpy</a>. Wide, gentle forest walk.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Spend a long afternoon by the lake. It's a perfect spot for skipping stones. Hike back at a slow pace.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> Picnic Mandatory!<br>
+                            <span class="text-slate-600">There are no restaurants at the lake. Pack some high-quality GF bread and local meats from Gros Cidac.</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d6" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 20°C (Valley)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 50m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Casual village wear.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier or stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Fleeces/Sweaters</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Stroll through <a href="https://www.google.com/maps/search/?api=1&query=Pré-Saint-Didier" target="_blank" class="text-indigo-600 font-semibold hover:underline">Pré-Saint-Didier</a>. Visit the local artisanal chocolate shops and bakeries.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Find the village playground with views of the Mont Blanc massif. Have a slow "merenda" (afternoon snack).</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Pizzeria+l'Escale+Pre-Saint-Didier" target="_blank" class="text-indigo-700 font-bold hover:underline">Ristorante Pizzeria l'Escale</a><br>
+                            <span class="text-slate-600">A cozy spot in the village with a dedicated gluten-free menu.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 7 -->
+                <div id="d7" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">JUNE 02 • GRESSAN</span>
+                        <h3 class="text-xl font-bold">Day 7: Open Spaces</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Introd Airbnb (Aosta Valley)
+                        </div>
+                        <a href="https://goo.gl/maps/pJCPPvgLjkJM5BQ18" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <div class="flex border-b border-slate-200">
+                        <button onclick="switchTab('d7', 'A')" id="btn-A-d7" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Opt A (Park)</button>
+                        <button onclick="switchTab('d7', 'B')" id="btn-B-d7" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">🌧️ Opt B (Space)</button>
+                        <button onclick="switchTab('d7', 'C')" id="btn-C-d7" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">🐎 Opt C (Ponies)</button>
+                    </div>
+                    <div id="content-A-d7" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 18°C (Valley)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 30m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Have packable waterproof jackets in your backpack. Rain is expected around 15:00.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Rain Jackets</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Picnic Lunch</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Head to <a href="https://www.google.com/maps/search/?api=1&query=Area+Verde+Les+Iles+Gressan" target="_blank" class="text-emerald-600 font-semibold hover:underline">Gressan Recreation Park</a>. Rent a family bike or just walk the paved paths.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Use the large "Les Îles" playground and feed the ducks at the small pond. Very easy logistics for the baby.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> Picnic on-site<br>
+                            <span class="text-slate-600">This day is very active. A packed lunch in the park is much easier with three kids than trying to find a restaurant mid-play.</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d7" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 18°C (Indoor)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h 10m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Casual indoor wear.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier or stroller</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Sleep in and enjoy a long breakfast in Introd.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Drive up to the <a href="https://www.google.com/maps/search/?api=1&query=Osservatorio+Astronomico+della+Regione+Autonoma+Valle+d'Aosta" target="_blank" class="text-indigo-600 font-semibold hover:underline">Saint-Barthélemy Planetarium</a> to attend a family show.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Osteria+del+Passet+Saint-Barthelemy" target="_blank" class="text-indigo-700 font-bold hover:underline">Osteria del Passet</a><br>
+                            <span class="text-slate-600">Small, traditional, and very friendly. Best to call ahead to ensure they have GF options ready.</span>
+                        </div>
+                    </div>
+                    <div id="content-C-d7" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 18°C (Valley)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h 20m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Casual activewear. Bring a light jacket as Lago Gover is at a slightly higher elevation.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier or stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Picnic Lunch</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive to <a href="https://www.google.com/maps/search/?api=1&query=Sunny+Ranch+Antey" target="_blank" class="text-rose-600 font-semibold hover:underline">Sunny Ranch Antey</a> for 25-minute pony rides (book in advance). A great pastoral setting for the kids.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Drive further up the valley to <a href="https://www.google.com/maps/search/?api=1&query=Lago+Gover" target="_blank" class="text-rose-600 font-semibold hover:underline">Lago Gover</a>. It has a beautiful tiny lake, a massive grass area for frisbee, and a great playground.</p>
+                        </div>
+
+                        <div class="bg-rose-50/50 p-4 rounded-lg border border-rose-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> Pack a lunch to eat on the grass at Lago Gover, or grab GF toasts at <a href="https://www.google.com/maps/search/?api=1&query=Bar+Birreria+Pizzeria+La+Pineta" target="_blank" class="text-rose-700 font-bold hover:underline">La Pineta</a> nearby if their kitchen is closed.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 8 -->
+                <div id="d8" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">JUNE 03 • VALNONTEY</span>
+                        <h3 class="text-xl font-bold">Day 8: Slow Alpine Living</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Introd Airbnb (Aosta Valley)
+                        </div>
+                        <a href="https://goo.gl/maps/pJCPPvgLjkJM5BQ18" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <div class="flex border-b border-slate-200">
+                        <button onclick="switchTab('d8', 'A')" id="btn-A-d8" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Opt A (River Hike)</button>
+                        <button onclick="switchTab('d8', 'B')" id="btn-B-d8" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">🌧️ Opt B (Cheese)</button>
+                    </div>
+                    <div id="content-A-d8" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 21°C (Warm sun)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 3km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Lightweight t-shirts, shorts or hiking trousers, sunglasses, and sun hats.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier or stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Sun Hats</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Fleeces/Sweaters</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Take the flat walk towards <a href="https://www.google.com/maps/search/?api=1&query=Valnontey+Cogne" target="_blank" class="text-emerald-600 font-semibold hover:underline">Valnontey</a> (very easy for carriers).</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Relax at a cafe in Cogne Square while the kids play in the nearby park area.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Valnontey+Cogne" target="_blank" class="text-emerald-700 font-bold hover:underline">Ristorante Valnontey</a><br>
+                            <span class="text-slate-600">Perfect post-walk lunch before heading to the square. Accustomed to hikers with dietary needs.</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d8" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 21°C (Indoor/Caves)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 50m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Bring a light pullover for the cold cheese caves.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Fleeces/Sweaters</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Visit a <a href="https://www.google.com/maps/search/?api=1&query=Centro+Visitatori+Cooperativa+Produttori+Latte+e+Fontina" target="_blank" class="text-indigo-600 font-semibold hover:underline">Fontina Caseificio</a> in Saint-Christophe for a tour of the aging caves.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Go to the <a href="https://www.google.com/maps/search/?api=1&query=Maison+des+Anciens+Remedes+Jovencan" target="_blank" class="text-indigo-600 font-semibold hover:underline">Maison des Anciens Remèdes</a> in Jovençan—an interactive museum about mountain herbs.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> Cook at Airbnb<br>
+                            <span class="text-slate-600">Since you'll be touring cheese cellars, it's a great day to eat a late lunch back at the Airbnb using local ingredients.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 9 -->
+                <div id="d9" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">JUNE 04 • LAKE ORTA / MAGGIORE</span>
+                        <h3 class="text-xl font-bold">Day 9: Transfer to the Lake</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Lake Maggiore Airbnb
+                        </div>
+                        <a href="https://goo.gl/maps/tWoeKuCe5rSUS5Re6" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <!-- GROCERY STOCK UP D9 -->
+                    <div class="bg-emerald-50 border-b border-emerald-100 px-5 py-3 flex flex-col text-sm gap-2">
+                        <div class="flex justify-between items-center cursor-pointer select-none" onclick="document.getElementById('grocery-d9-info').classList.toggle('hidden')">
+                            <div class="flex items-center gap-2 text-emerald-900">
+                                <span>🛒</span> <strong>Stocking Up:</strong> Aosta to Lake Maggiore
+                            </div>
+                            <button class="text-emerald-700 font-bold hover:bg-emerald-200 text-xs flex items-center gap-1 bg-emerald-100 px-2 py-1 rounded transition-colors">
+                                Options <span>▼</span>
+                            </button>
+                        </div>
+                        <div id="grocery-d9-info" class="hidden mt-2 p-4 bg-white rounded-lg border border-emerald-100 text-xs text-slate-700 shadow-sm">
+                            <ul class="space-y-3">
+                                <li>📍 <a href="https://www.google.com/maps/place/Centro+Commerciale+Le+Isole" target="_blank" class="font-bold underline text-emerald-600 hover:text-emerald-800">Ipercoop Le Isole (Gravellona Toce)</a>: Right on the highway junction entering the lake region. Biggest supermarket in the area. <strong>Best for either Option A or B on the drive in</strong>.</li>
+                                <li>📍 <a href="https://www.google.com/maps/search/Carrefour+Market+Stresa" target="_blank" class="font-bold underline text-indigo-600 hover:text-indigo-800">Carrefour Market (Stresa)</a>: Good for smaller, daily top-ups once you arrive at your new base.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex border-b border-slate-200 mt-4">
+                        <button onclick="switchTab('d9', 'A')" id="btn-A-d9" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Opt A (Island)</button>
+                        <button onclick="switchTab('d9', 'B')" id="btn-B-d9" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">🌧️ Opt B (Town)</button>
+                    </div>
+                    <div id="content-A-d9" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 23°C (Sunny)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 2h Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Breezy linen, short sleeves. Carry a light hoodie for open boats on the water.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Fleeces/Sweaters</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Sun Hats</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Tablet for the drive</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive 1.5 hours to Orta San Giulio. Take the ferry to <a href="https://www.google.com/maps/search/?api=1&query=Isola+San+Giulio+Orta" target="_blank" class="text-emerald-600 font-semibold hover:underline">Isola San Giulio</a>.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Walk the "Way of Silence." Return to the mainland and check into your Lake Maggiore accommodation in the late afternoon.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Venus+Orta+San+Giulio" target="_blank" class="text-emerald-700 font-bold hover:underline">Ristorante Venus (Orta San Giulio)</a><br>
+                            <span class="text-slate-600">Right on the water. Well-versed in GF catering and the view is spectacular.</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d9" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 23°C (Overcast)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 2h Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Casual town wear. Travel umbrellas.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Umbrellas</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Tablet for the drive</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive to <a href="https://www.google.com/maps/search/?api=1&query=Orta+San+Giulio" target="_blank" class="text-indigo-600 font-semibold hover:underline">Orta San Giulio village</a>. Explore the car-free stone streets.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Have lunch in the main piazza. If raining, visit the <a href="https://www.google.com/maps/search/?api=1&query=Sacro+Monte+di+Orta" target="_blank" class="text-indigo-600 font-semibold hover:underline">Sacro Monte di Orta</a> via a short, easy drive up the hill.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Leon+d'Oro+Orta+San+Giulio" target="_blank" class="text-indigo-700 font-bold hover:underline">Leon d'Oro</a><br>
+                            <span class="text-slate-600">Located in the main square. Solid GF menu and easy to keep an eye on the kids playing in the piazza.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 10 -->
+                <div id="d10" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">JUNE 05 • STRESA</span>
+                        <h3 class="text-xl font-bold">Day 10: Islands & Safari</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Lake Maggiore Airbnb
+                        </div>
+                        <a href="https://goo.gl/maps/tWoeKuCe5rSUS5Re6" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <div class="flex border-b border-slate-200">
+                        <button onclick="switchTab('d10', 'A')" id="btn-A-d10" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Opt A (Isola Madre)</button>
+                        <button onclick="switchTab('d10', 'B')" id="btn-B-d10" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">☀️ Opt B (Villa Zoo)</button>
+                    </div>
+                    <div id="content-A-d10" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 24°C (Lake)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 0m (Ferry)</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Breathable summer wear. Bring a light down vest/jacket for late PM ferry breezes.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Stroller or carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Jackets</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Take the boat from Stresa to <a href="https://www.google.com/maps/search/?api=1&query=Isola+Madre+Stresa" target="_blank" class="text-emerald-600 font-semibold hover:underline">Isola Madre</a>. Explore the botanical gardens and the white peacocks.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Visit the Puppet Museum inside the island's Palace. Take the ferry back and walk the Stresa promenade.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Mamma+Mia+Stresa" target="_blank" class="text-emerald-700 font-bold hover:underline">Mamma Mia (Stresa)</a><br>
+                            <span class="text-slate-600">Eating on the islands is expensive. Grab a snack there and have proper lunch back in Stresa at Mamma Mia (famous for GF options).</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d10" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 24°C (Park)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 10m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Walk-friendly sneakers or sandals.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Picnic Lunch</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Shoes</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Visit <a href="https://www.google.com/maps/search/?api=1&query=Parco+Pallavicino+Stresa" target="_blank" class="text-indigo-600 font-semibold hover:underline">Villa Pallavicino</a>. Spend time in the petting zoo area with goats and deer.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Use the villa's massive playground and enjoy a picnic under the ancient sequoia trees.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Lo+Stornello+Stresa" target="_blank" class="text-indigo-700 font-bold hover:underline">Ristorante Pizzeria Lo Stornello</a><br>
+                            <span class="text-slate-600">A certified AIC (Celiac Association) restaurant in Stresa.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 11 -->
+                <div id="d11" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">JUNE 06 • MOTTARONE / CANNOBIO</span>
+                        <h3 class="text-xl font-bold">Day 11: Rollercoasters & Shores</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>🏠</span> <strong>Stay:</strong> Lake Maggiore Airbnb
+                        </div>
+                        <a href="https://goo.gl/maps/tWoeKuCe5rSUS5Re6" target="_blank" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">📍 Google Maps</a>
+                    </div>
+
+                    <div class="flex border-b border-slate-200">
+                        <button onclick="switchTab('d11', 'A')" id="btn-A-d11" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Opt A (Mountain)</button>
+                        <button onclick="switchTab('d11', 'B')" id="btn-B-d11" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">☀️ Opt B (Beach)</button>
+                    </div>
+                    <div id="content-A-d11" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 15°C (Summit)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 10m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 1.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Requires fleece/jacket for the peak breeze.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to Pack in the Daybag</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Jackets</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Shoes</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Take the cable car to Mottarone. Ride the <a href="https://www.google.com/maps/search/?api=1&query=Alpyland+Mottarone" target="_blank" class="text-emerald-600 font-semibold hover:underline">Alpyland</a> coaster (age 4+ can ride with you).</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Visit the <a href="https://www.google.com/maps/search/?api=1&query=Giardino+Botanico+Alpinia" target="_blank" class="text-emerald-600 font-semibold hover:underline">Alpinia Botanical Garden</a> at the mid-station for the best lake views before heading down.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Casa+della+Neve+Mottarone" target="_blank" class="text-emerald-700 font-bold hover:underline">Ristorante Casa della Neve</a><br>
+                            <span class="text-slate-600">Located near the top. Typical mountain food; they easily accommodate GF requests with polenta-based dishes.</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d11" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 25°C (Beach)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 1h Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Pure beach mode - wear swimwear under light clothes. Bring towels and water shoes.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Swimwear & Towels</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Sandales</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Sun Hats</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Drive 30 mins north to <a href="https://www.google.com/maps/search/?api=1&query=Cannobio+Lake+Maggiore" target="_blank" class="text-indigo-600 font-semibold hover:underline">Cannobio</a>. Stroll the wide, paved lakefront.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Let the kids play at the <a href="https://www.google.com/maps/search/?api=1&query=Lido+di+Cannobio" target="_blank" class="text-indigo-600 font-semibold hover:underline">Lido (beach)</a>. The water is shallow and safe for splashing.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Pizzeria+Sancarlo+Cannobio" target="_blank" class="text-indigo-700 font-bold hover:underline">Ristorante Pizzeria Sancarlo</a><br>
+                            <span class="text-slate-600">Right on the promenade. They offer GF pizza and pasta and have plenty of outdoor seating to watch the lake.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 12 -->
+                <div id="d12" class="day-card hidden bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div class="bg-slate-800 text-white p-4">
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider">JUNE 07 • ARONA / AIRPORT</span>
+                        <h3 class="text-xl font-bold">Day 12: Departure Day</h3>
+                    </div>
+
+                    <!-- Accommodation Banner -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-5 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
+                        <div class="flex items-center gap-2 text-indigo-900">
+                            <span>✈️</span> <strong>Departure:</strong> Flying Home
+                        </div>
+                        <a href="#" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">Malpensa Airport (MXP)</a>
+                    </div>
+
+                    <!-- Car Rental Drop-off Banner -->
+                    <div class="bg-blue-50 border-b border-blue-100 px-5 py-3 flex flex-col text-sm gap-2">
+                        <div class="flex justify-between items-center cursor-pointer select-none" onclick="document.getElementById('car-dropoff-info').classList.toggle('hidden')">
+                            <div class="flex items-center gap-2 text-blue-900">
+                                <span>🚙</span> <strong>Drop-off:</strong> Maggiore (Conf: 21652393IL0)
+                            </div>
+                            <button class="text-blue-600 font-bold hover:bg-blue-200 text-xs flex items-center gap-1 bg-blue-100 px-2 py-1 rounded transition-colors">
+                                Instructions <span>▼</span>
+                            </button>
+                        </div>
+                        <div id="car-dropoff-info" class="hidden mt-2 p-4 bg-white rounded-lg border border-blue-100 text-xs text-slate-700 shadow-sm space-y-2">
+                            <p><strong class="text-slate-900">Booking Number:</strong> 630968973</p>
+                            <p><strong class="text-slate-900">Supplier:</strong> Maggiore</p>
+                            <p><strong class="text-slate-900">Address:</strong> Malpensa Aeroporto Terminal 2, Milan, 21010</p>
+                            <p><strong class="text-slate-900">Telephone:</strong> <a href="tel:+390258583803" class="text-blue-600 font-bold hover:underline">+39 02 58583803</a></p>
+                            <div class="mt-3">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Maggiore+Malpensa+Aeroporto+Terminal+2" target="_blank" class="inline-block px-3 py-1.5 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 font-bold transition-colors">📍 Open in Maps</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex border-b border-slate-200">
+                        <button onclick="switchTab('d12', 'A')" id="btn-A-d12" class="flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors">☀️ Opt A (Forest)</button>
+                        <button onclick="switchTab('d12', 'B')" id="btn-B-d12" class="flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors">🌧️ Opt B (Museum)</button>
+                    </div>
+                    <div id="content-A-d12" class="p-5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 22°C (Arona)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 55m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2.5km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/3320/3320226.png" alt="Carrier" class="w-3.5 h-3.5 opacity-80"> Carrier</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Travel-friendly layers. Joggers, slip-on shoes for airport security. Baby in footie sleepsuit.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Baby carrier</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Shoes</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Pack and check out. Drive to <a href="https://www.google.com/maps/search/?api=1&query=Lagoni+di+Mercurago" target="_blank" class="text-emerald-600 font-semibold hover:underline">Lagoni di Mercurago</a>.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Gentle walk through the woods to tire the kids out. Head towards Arona for dinner before the 30-min drive to Malpensa.</p>
+                        </div>
+
+                        <div class="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Pizzeria+Da+Aldo+Arona" target="_blank" class="text-emerald-700 font-bold hover:underline">Ristorante Pizzeria Da Aldo (Arona)</a><br>
+                            <span class="text-slate-600">A local favorite with excellent GF pizza and a very welcoming atmosphere for families.</span>
+                        </div>
+                    </div>
+                    <div id="content-B-d12" class="p-5 hidden">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 border border-slate-200 text-xs px-2 py-1 rounded font-bold">🌡️ 22°C (Airport)</span>
+                            <span class="bg-sky-50 text-sky-700 border border-sky-100 text-xs px-2 py-1 rounded font-bold">🚗 45m Drive</span>
+                            <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs px-2 py-1 rounded font-bold">🥾 2km Walk</span>
+                            <span class="bg-violet-50 text-violet-700 border border-violet-100 text-xs px-2 py-1 rounded font-bold inline-flex items-center gap-1.5"><img src="https://cdn-icons-png.flaticon.com/128/19013/19013132.png" alt="Stroller" class="w-3.5 h-3.5 opacity-80"> Stroller OK</span>
+                        </div>
+                        <p class="text-sm text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-100 mb-4"><strong>👗 Dress Code:</strong> Travel-ready layers. Keep a light rain shell handy for the final rental car drop-off.</p>
+                        
+                        <div class="mb-6">
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">🎒 What to take for the day</h5>
+                            <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Stroller</li>
+                                <li class="bg-white border border-slate-200 px-2 py-1 rounded-md shadow-sm">Light Jackets</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6 space-y-3 text-sm text-slate-700">
+                            <p><strong class="text-slate-900">Morning:</strong> Slow lakeside breakfast before driving towards the airport area.</p>
+                            <p><strong class="text-slate-900">Afternoon:</strong> Spend 3-4 hours at <a href="https://www.google.com/maps/search/?api=1&query=Volandia+Parco+e+Museo+del+Volo" target="_blank" class="text-indigo-600 font-semibold hover:underline">Volandia Flight Museum</a>. Massive indoor play area to burn energy before the 22:55 flight.</p>
+                        </div>
+
+                        <div class="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100 text-sm text-slate-800">
+                            <strong>🍽️ GF Lunch:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Samarcanda+Somma+Lombardo" target="_blank" class="text-indigo-700 font-bold hover:underline">Ristorante Samarcanda</a><br>
+                            <span class="text-slate-600">Near the airport. They have a massive menu and are very reliable for GF safety.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Track state for horizontal swiping
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let currentDayInt = 1;
+        let currentOption = 'A';
+
+        // Graph switching logic
+        function switchGraph(type) {
+            const types = ['temp', 'drive', 'walk'];
+            types.forEach(t => {
+                const btn = document.getElementById('tab-' + t);
+                const container = document.getElementById('graph-' + t + '-container');
+                if (t === type) {
+                    btn.className = "flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-white text-emerald-700 transition-colors";
+                    container.classList.remove('hidden');
+                    container.classList.add('block');
+                } else {
+                    btn.className = "flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-100 transition-colors";
+                    container.classList.remove('block');
+                    container.classList.add('hidden');
+                }
+            });
+        }
+
+        // Shows only one day card at a time and handles sidebar highlights
+        function showDay(dayId, option = null) {
+            currentDayInt = parseInt(dayId.replace('d', ''));
+            
+            // 1. Hide all day cards (now 1 to 12)
+            for (let i = 1; i <= 12; i++) {
+                const card = document.getElementById('d' + i);
+                if(card) {
+                    card.classList.add('hidden');
+                }
+            }
+            
+            // 2. Show the targeted day card
+            const activeCard = document.getElementById(dayId);
+            if(activeCard) {
+                activeCard.classList.remove('hidden');
+                
+                // If a specific option (A or B or C) was passed from clicking the graph dot, switch to it
+                if (option) {
+                    currentOption = option;
+                    switchTab(dayId, option);
+                } else {
+                    // Check which tab is currently active for this specific card
+                    const btnA = document.getElementById(`btn-A-${dayId}`);
+                    const btnB = document.getElementById(`btn-B-${dayId}`);
+                    const btnC = document.getElementById(`btn-C-${dayId}`);
+                    
+                    if (btnA && !btnA.classList.contains('border-transparent')) {
+                        currentOption = 'A';
+                    } else if (btnB && !btnB.classList.contains('border-transparent')) {
+                        currentOption = 'B';
+                    } else if (btnC && !btnC.classList.contains('border-transparent')) {
+                        currentOption = 'C';
+                    } else {
+                        currentOption = 'A'; // Default fallback, but skip if Day 1 has no tabs
+                    }
+                }
+
+                // Scroll smoothly to focus directly on the active day card (offset for header)
+                setTimeout(() => {
+                    const yOffset = -90; // Accounts for sticky header + spacing
+                    const y = activeCard.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }, 10);
+            }
+
+            // 3. Reset all navigation button styles
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('bg-slate-200', 'text-slate-900', 'font-bold');
+                link.classList.add('text-slate-600', 'hover:bg-slate-200');
+            });
+            
+            // 4. Highlight the active navigation button
+            const activeNavBtn = document.getElementById('nav-' + dayId);
+            if(activeNavBtn) {
+                activeNavBtn.classList.remove('text-slate-600', 'hover:bg-slate-200');
+                activeNavBtn.classList.add('bg-slate-200', 'text-slate-900', 'font-bold');
+                
+                // Keep active button visible in scroll view for mobile devices
+                const navContainer = activeNavBtn.parentElement;
+                navContainer.scrollLeft = activeNavBtn.offsetLeft - (navContainer.offsetWidth / 2) + (activeNavBtn.offsetWidth / 2);
+            }
+        }
+
+        // Tab switching logic inside the day cards
+        function switchTab(dayId, option) {
+            currentOption = option;
+            const options = ['A', 'B', 'C'];
+            
+            options.forEach(opt => {
+                const btn = document.getElementById(`btn-${opt}-${dayId}`);
+                const content = document.getElementById(`content-${opt}-${dayId}`);
+                
+                if (!btn || !content) return; // Skip if tab doesn't exist for this day (like Day 1)
+                
+                if (opt === option) {
+                    if (opt === 'A') {
+                        btn.className = "flex-1 py-3 text-sm font-bold border-b-2 border-emerald-500 bg-emerald-50 text-emerald-700 transition-colors";
+                    } else if (opt === 'B') {
+                        btn.className = "flex-1 py-3 text-sm font-bold border-b-2 border-indigo-500 bg-indigo-50 text-indigo-700 transition-colors";
+                    } else if (opt === 'C') {
+                        btn.className = "flex-1 py-3 text-sm font-bold border-b-2 border-rose-500 bg-rose-50 text-rose-700 transition-colors";
+                    }
+                    content.classList.remove('hidden');
+                } else {
+                    btn.className = "flex-1 py-3 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors";
+                    content.classList.add('hidden');
+                }
+            });
+        }
+
+        // Initialize swipe gestures and first day load
+        document.addEventListener('DOMContentLoaded', () => {
+            showDay('d1');
+
+            // Attach touch swipe listeners to the container
+            const dayContainer = document.getElementById('day-container');
+            if(dayContainer) {
+                dayContainer.addEventListener('touchstart', e => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    touchStartY = e.changedTouches[0].screenY;
+                }, {passive: true});
+
+                dayContainer.addEventListener('touchend', e => {
+                    let touchEndX = e.changedTouches[0].screenX;
+                    let touchEndY = e.changedTouches[0].screenY;
+                    
+                    let deltaX = touchStartX - touchEndX;
+                    let deltaY = touchStartY - touchEndY;
+                    
+                    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+                        
+                        // Handle Day 1 special case (no tabs)
+                        if (currentDayInt === 1) {
+                            if (deltaX > 0) { showDay('d2', 'A'); }
+                            return; // No backwards swipe past Day 1
+                        }
+
+                        // Get all available tabs for the current day
+                        const availableTabs = Array.from(document.querySelectorAll(`[id^="btn-"][id$="-d${currentDayInt}"]`)).map(btn => btn.id.split('-')[1]);
+                        let currentIndex = availableTabs.indexOf(currentOption);
+
+                        if (deltaX > 0) {
+                            // Swiped LEFT -> Move Forward
+                            if (currentIndex > -1 && currentIndex < availableTabs.length - 1) {
+                                switchTab(`d${currentDayInt}`, availableTabs[currentIndex + 1]);
+                            } else if (currentDayInt < 12) {
+                                showDay(`d${currentDayInt + 1}`, 'A');
+                            }
+                        } else {
+                            // Swiped RIGHT -> Move Backward
+                            if (currentIndex > 0) {
+                                switchTab(`d${currentDayInt}`, availableTabs[currentIndex - 1]);
+                            } else if (currentDayInt > 1) {
+                                // Find last tab of previous day
+                                const prevTabs = Array.from(document.querySelectorAll(`[id^="btn-"][id$="-d${currentDayInt - 1}"]`)).map(btn => btn.id.split('-')[1]);
+                                if (prevTabs.length > 0) {
+                                    showDay(`d${currentDayInt - 1}`, prevTabs[prevTabs.length - 1]);
+                                } else {
+                                    showDay(`d${currentDayInt - 1}`); // Fallback for prev day with no tabs (Day 1)
+                                }
+                            }
+                        }
+                    }
+                }, {passive: true});
+            }
+        });
+    </script>
+</body>
+</html>
